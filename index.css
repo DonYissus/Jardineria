@@ -26,9 +26,11 @@ nav a {
     background-color: #757575;
     color: white;
     padding: 10px;
-
 }
 
+nav li:hover {
+    background-color: black;
+}
 
 .carousel {
     width: 640px;
@@ -40,30 +42,6 @@ nav a {
 
 * {
     background-color: #065406;
-}
-
-body {
-    background-color: transparent !important;
-}
-
-
-title {
-    stop-color: aliceblue;
-}
-
-#lowerleft {
-    margin-bottom: 1px;
-    margin-left: 1px;
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    color: green;
-    position: fixed;
-    bottom: 0;
-}
-
-.ex4 {
-    text-align: right;
 }
 
 footer {
