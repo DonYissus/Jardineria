@@ -1,119 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Quienes Somos?</title>
-    <link rel="stylesheet" type="text/css"  href="quienessomos.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Quienes Somos?</title>
+  <link rel="stylesheet" type="text/css" href="quienessomos.css">
 
-    <style>
-        body {font-family: Arial, Helvetica, sans-serif;}
-        form {border: 3px solid #f1f1f1;}
-        
-        input[type=text], input[type=password] {
-          width: 100%;
-          padding: 12px 20px;
-          margin: 8px 0;
-          display: inline-block;
-          border: 1px solid #ccc;
-          box-sizing: border-box;
-        }
-        
-        button {
-          background-color: #04AA6D;
-          color: white;
-          padding: 14px 20px;
-          margin: 8px 0;
-          border: none;
-          cursor: pointer;
-          width: 100%;
-        }
-        
-        button:hover {
-          opacity: 0.8;
-        }
-        
-        .cancelbtn {
-          width: auto;
-          padding: 10px 18px;
-          background-color: #f44336;
-        }
-        
-        .imgcontainer {
-          text-align: center;
-          margin: 24px 0 12px 0;
-        }
-        
-        img.avatar {
-          width: 40%;
-          border-radius: 50%;
-        }
-        
-        .container {
-          padding: 16px;
-        }
-        
-        span.psw {
-          float: right;
-          padding-top: 16px;
-        }
-        
-        /* Change styles for span and cancel button on extra small screens */
-        @media screen and (max-width: 300px) {
-          span.psw {
-             display: block;
-             float: none;
-          }
-          .cancelbtn {
-             width: 100%;
-          }
-        }
-        </style>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    form {
+      border: 3px solid #f1f1f1;
+    }
+
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Jardinería Don Yissus</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="">Comprar Articulos</a></li>
-            <li><a href="">Seguimiento</a></li>
-            <li><a href="quienessomos.html">¿Quiénes Somos?</a></li>
-            <li><a href="login.html">Inicio Sesion</a></li>
-    </nav>   
+  <h1>Jardinería Don Yissus</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="">Comprar Articulos</a></li>
+      <li><a href="">Seguimiento</a></li>
+      <li><a href="quienessomos.html">¿Quiénes Somos?</a></li>
+      <li><a href="login.html">Inicio Sesion</a></li>
+  </nav>
 
-    <br>
+  <br>
 
-<form action="/action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="Imagenes/2.jpeg" alt="Avatar" class="avatar">
-  </div>
+  <form action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="Imagenes/2.jpeg" alt="Avatar" class="avatar">
+    </div>
 
-  <div class="container">
-    <label for="uname"><b>Nombre de usuario</b></label>
-    <input type="text" placeholder="Ingresar nombre de usuario" name="uname" required>
+    <div class="container">
+      <label for="uname"><b>Nombre de usuario</b></label>
+      <input type="text" placeholder="Ingresar nombre de usuario" name="uname" required>
 
-    <label for="psw"><b>Contraseña</b></label>
-    <input type="password" placeholder="Ingresar contraseña" name="psw" required>
-        
-    <button type="submit">Ingresar</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Recordar
-    </label>
-  </div>
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Ingresar contraseña" name="psw" required>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancelar</button>
-    <span class="psw">Olvido su <a href="#">contraseña?</a></span>
-    <span class="psw">¿No tienes <a href="#">cuenta? </a></span>
-  </div>
-</form>
+      <button type="submit">Ingresar</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Recordar
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancelar</button>
+      <span class="psw"> <a href="#">Olvido su contraseña?</a></span>
+      <span class="psw"><a href="sign.html">¿No tienes cuenta? </a></span>
+    </div>
+  </form>
 
 
-    
-   
-    <footer>
-        <p>Está página esta echa para ventas sin fines de lucro para ayudar a recaudar fondos a una fundacion</p>
-    </footer>
+
+
+  <footer>
+    <p>Está página esta echa para ventas sin fines de lucro para ayudar a recaudar fondos a una fundacion</p>
+  </footer>
 </body>
+
 </html>
