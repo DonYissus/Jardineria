@@ -3,19 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Catalogo</title>
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="compraarticulo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Catalogo.css">
 
     <h1>Jardinería Don Yissus</h1>
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="compraarticulo.html">Comprar Articulos</a></li>
-            <li><a href=""onclick="alert('Seccion no disponible')">Seguimiento</a></li>
+            <li><a href="Catalogo.html">Catalogo</a></li>
+            <li><a href="" onclick="alert('Seccion no disponible')">Seguimiento</a></li>
             <li><a href="quienessomos.html">¿Quiénes Somos?</a></li>
             <li><a href="login.html">Inicio Sesion</a></li>
     </nav>
@@ -228,6 +229,17 @@
             renderizarCarrito();
         });
     </script>
+
+    <script>
+        $.getJSON('https://mindicador.cl/api', function (data) {
+            var dailyIndicators = data;
+            $("<p/>", {
+                html: 'El valor actual del peso chileno en dolar es $' + dailyIndicators.dolar.valor
+            }).appendTo("body");
+        }).fail(function () {
+            console.log('Error al consumir la API!');
+        });
+    </script>
 </head>
 
 <body>
@@ -248,6 +260,7 @@
         </div>
     </div>
 </body>
+
 
 <footer>
     <p>Está página esta echa para ventas sin fines de lucro para ayudar a recaudar fondos a una fundacion</p>
