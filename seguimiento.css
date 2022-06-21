@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: ghostwhite;
+}
+
+h1 {
+    background-color: #03bb85;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    background-color: #757575;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+
+nav li:hover {
+    background-color: black;
+}
+
+h2 {
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.cuadro {
+    text-align: center;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 300px;
+    border: 1px solid#0000;
+
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 10%;
+}
+
+footer p {
+    padding: 40px;
+    text-align: center;
+}
+
+.numseguimiento {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: -20px;
+}
+
+.origen {
+    float: left;
+    margin-left: 50px;
+    text-align: center;
+}
+.transito {
+    float: left;
+    margin-left: 50px;
+}
+.destino {
+    float: left;
+    margin-left: 50px;
+}
+.reparto {
+    float: left;
+    margin-left: 50px;
+}
+.entregado{
+    float: left;
+    margin-left: 50px;
+}
+img {
+    width: 40px;
+    height: 40px;
+}

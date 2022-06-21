@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add.css">
+
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <div class="encabezado">
+        <h1>Jardineria DonYissus</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Catalogo.html">Catalogo</a></li>
+            <li><a href="" onclick="alert('Seccion no disponible')">Seguimiento</a></li>
+            <li><a href="quienessomos.html">¿Quiénes Somos?</a></li>
+            <li><a href="login.html">Inicio Sesion</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <div id="bgden" onclick="TatForm();"></div>
+    <div id="phantrang"></div>
+    <div style="height: 300px; width: 100%" id="formthem">
+        <div id="themsanpham" style="margin-left: 10%">
+            <form id="formthemsp">
+                <div id="X1" onclick="TatForm();"></div>
+                <div class="dulieuinput">Nombre del producto: </div>
+                <input type="text" name="name" placeholder="Introduzca el nombre del producto" id="name1" value="">
+                <div id="errortensp" class="error1">No ha introducido el nombre del producto</div>
+                <div style="clear: both"></div>
+                <div class="dulieuinput">Marca comercial: </div>
+                <input type="text" name="brand1" placeholder="Ingrese el nombre de la marca del producto" id="brand1" value="">
+                <div id="errorhieusp" class="error1">No has introducido el nombre de la marca.</div>
+                <div style="clear: both"></div>
+                <div class="dulieuinput">Precio del producto: </div>
+                <input type="text" name="price1" placeholder="Ingrese el precio del producto" id="price1" value="">
+                <div id="errorgiasp" class="error1">No has introducido el precio del producto.</div>
+                <div style="clear: both"></div>
+                <div class="dulieuinput">Tipo de producto: </div>
+                <select style="border-radius: 10px" id="loai1">
+                    <option value="plantas">Plantas </option>
+                    <option value="Art">Art de Jardineria</option>
+                    <option value="sincategoria">Sin categoria</option>
+                </select>
+                <div style="clear: both"></div>
+                <div class="dulieuinput">Imagen: </div>
+                <input type="file" name="img" id="img1" value="">
+                <div id="errorhinhsp" class="error1">Aún no has seleccionado una imagen</div>
+                <div style="clear: both"></div>
+                <button onclick="addProduct();"
+                    style="width: 30%; margin-top: 5px; margin-left: 30%; height: 30px;border-radius: 50px; background-color: black; color: red; font-weight: bold;">Añadir nuevo producto</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Está página esta echa para ventas sin fines de lucro para ayudar a recaudar fondos a una fundacion</p>
+    </footer>
+</body>
+
+</html>
+</body>
+
+</html>
