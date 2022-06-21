@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<link rel="stylesheet" href="{% static 'core/'%}css/login.css">
+
+<br>
+
+<form action="/action_page.php" method="post">
+    <div class="imgcontainer">
+    <img src="{% static 'core/'%}img/2.jpeg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+    <label for="uname"><b>Nombre de usuario</b></label>
+    <input type="text" placeholder="Ingresar nombre de usuario" name="uname" required>
+
+    <label for="psw"><b>Contraseña</b></label>
+    <input type="password" placeholder="Ingresar contraseña" name="psw" required>
+
+    <button type="submit">Ingresar</button>
+    <label>
+        <input type="checkbox" checked="checked" name="remember"> Recordar
+    </label>
+
+    </div>
+
+    <div class="container" style="background-color:#03bb85">
+    <button type="button" class="cancelbtn">Cancelar</button>
+    <span class="psw"> <a href="#">¿Olvido su contraseña? </a></span>
+    <span class="psw"> <a href="{% url 'sign' %}">¿No tienes cuenta? </a></span>
+    </div>
+</form>
+
+</body>
+
+{% endblock %}
+

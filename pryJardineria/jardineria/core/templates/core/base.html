@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Jardineria</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/' %}css/index.css">
+
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+integrity="sha384-
+TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col"> <img src="{% static 'core/'%}img/logo.png" width="1px" alt=""></div>
+        <div class="col">
+            <div id="centrado">
+                <h1>Jardinería DonYissus</h1>
+            </div>
+        </div>
+        <div class="col">
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+
+
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Inicio</a></li>
+                <li><a href="{% url 'catalogo' %}">Catalogo</a></li>
+                <li><a href="{% url 'seguimiento' %}">Seguimiento</a></li>
+                <li><a href="{% url 'quienessomos' %}">¿Quiénes Somos?</a></li>
+                {% if user.is_authenticated %}
+                <li>
+                    <a href="#">Usuario: {{ user.username}}</a>
+                </li>
+                <li>
+                    <a href="{% url 'logout' %}">Cerrar Sesión</a>
+                    <a href="{% url 'nuevo_producto' %}">Nuevo Producto</a>
+                    <a href="{% url 'listado_productos' %}">Lista de Productos</a>
+
+                </li>
+                {% else %}
+                <li>
+                    <a href="{% url 'login' %}">Inicio Sesion</a>
+                </li>
+                <li>
+                    <a href= {% url 'registro_usuario' %}> Registrar Usuario</a>
+                </li>
+                {% endif %}
+        </nav>
+
+        <div class="row">
+
+            <div class="container">
+            {% block contenido %}
+
+            {% endblock %}
+        </div>
+
+
+
+        <footer>
+            <p>Está página esta echa para ventas sin fines de lucro para ayudar a recaudar fondos a una fundacion</p>
+        </footer>
+
+</body>
+
+</html>

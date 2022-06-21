@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<link rel="stylesheet" href="{% static 'core/'%}css/quienessomos.css">
+
+    <div class="contenido">
+        <div class="articulos">
+            <div class="secciones">
+                <div>
+                    <h2>¿Quienes Somos?</h2>
+                    <p>Somos una Jardineria que creció gracias a la necesidad de las personas a obtener productos de
+                        calidad y accesibles para aquellas personas que desean decorar su jardin y dar mas vida a su
+                        hogar.
+                        Como objetivo ademas de ayudar a la necesidad general, para ello estamos construyendo un sistema
+                        de ventas seguro, asequible, sostenible y eficiente para que esta sea lo mas intuitivo y rapido
+                        de usar.</p>
+                </div>
+                <div><img src="{% static 'core/'%}img/1.jpeg"></div>
+            </div>
+            <div class="secciones">
+                <p>Nuestro equipo acudió a la ayuda de los vecinos de nuestra comunidad para apoyarlos en sus ventas de
+                    Jardinería, viendo lo esforzado de su trabajo decidimos crear esta pagina para dar mayor cobertura a
+                    sus productos. Añadiendo además que esta jardineria apoya a una fundación sin fines de lucro dando
+                    beneficios a quienes apoyen en sus compras.</p>
+                <div><img src="{% static 'core/'%}img/2.jpeg"></div>
+            </div>
+        </div>
+        <div class="menu_secundario">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </div>
+{% endblock  %}
+
+

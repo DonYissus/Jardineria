@@ -1,0 +1,49 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+
+<div class="col">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'core/'%}img/Pala.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'core/'%}img/Rastrillo.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'core/'%}img/Tijeras.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"><a class="btn btn-secondary" href="https://www.google.cl" role="button">Suscríbete</a>
+                <h5>Obtén un 5% de descuento en todos los productos que compres</h5>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col">
+                <div class="input-group flex-nowrap"><span class="input-group-text" id="addon-wrapping">@</span>
+                    <input type="text" class="form-control" placeholder="Ingrese código de descuento/promocion"
+                        aria-label="Ingrese código de descuento/promocion" aria-describedby="addon-wrapping">
+                </div>
+            </div>
+
+
+{% endblock %}

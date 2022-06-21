@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<link rel="stylesheet" href="{% static 'core/'%}css/seguimiento.css">
+
+    <div class="cuadro">
+        <h2>Seguimiento</h2>
+        <div class="numseguimiento">
+            <textarea name="" id="numseguimiento" placeholder="Ingrese Codigo" maxlength="9" cols="30"
+                rows="1"></textarea>
+        </div>
+        <div class="origen">
+            <img src="{% static 'core/'%}img/Seguimiento/Origen.png" alt="">
+            <p>Origen</p>
+        </div>
+        <div class="transito">
+            <img src="{% static 'core/'%}img/Seguimiento/Transito.png" alt="">
+            <p>En transito</p>
+        </div>
+        <div class="destino">
+            <img src="{% static 'core/'%}img/Seguimiento/Desitno.png" alt="">
+            <p>En destino</p>
+        </div>
+        <div class="reparto">
+            <img src="{% static 'core/'%}img/Seguimiento/Reparto.png" alt="">
+            <p>En reparto</p>
+        </div>
+        <div class="entregado">
+            <img src="{% static 'core/'%}img/Seguimiento/Entregado.png" alt="">
+            <p>Entregado</p>
+        </div>
+    </div>
+
+</body>
+
+{% endblock  %}
